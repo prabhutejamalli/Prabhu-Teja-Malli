@@ -6,6 +6,7 @@ import {
   skillCategories,
   projects,
   experiences,
+  education,
   contactData,
 } from '../data/portfolio.data';
 import useScrollSpy from '../hooks/useScrollSpy';
@@ -32,7 +33,7 @@ const Portfolio: React.FC = () => {
 
       <main>
         <Hero info={personalInfo} />
-        <About info={personalInfo} stats={stats} experiences={experiences} />
+        <About info={personalInfo} stats={stats} experiences={experiences} education={education} />
         <Skills categories={skillCategories} />
         <Projects projects={projects} />
         <Contact data={contactData} />

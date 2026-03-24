@@ -62,6 +62,13 @@ export interface Experience {
   description: string[];
 }
 
+export interface Education {
+  id: string;
+  degree: string;
+  institution: string;
+  year: string;
+}
+
 export interface Tab {
   id: string;
   label: string;

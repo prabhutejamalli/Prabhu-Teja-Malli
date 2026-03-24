@@ -160,6 +160,50 @@
 
 .chip a:hover { color: var(--accent); }
 
+/* Achievements */
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievementList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition);
+}
+
+.achievement:hover {
+  border-color: var(--border-hover);
+}
+
+.achieveIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.achievement p {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+.achievement strong {
+  color: var(--accent);
+}
+
 /* Experience */
 .expHeading {
   font-family: var(--font-heading);
