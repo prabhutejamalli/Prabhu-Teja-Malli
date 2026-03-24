@@ -37,10 +37,9 @@ const Hero: React.FC<HeroProps> = ({ info }) => (
         <a
           href={info.resumeUrl}
           className={styles.btnSecondary}
-          target="_blank"
-          rel="noopener noreferrer"
+          download="Prabhu_Teja_Malli_Resume.pdf"
         >
-          Download Resume
+          ↓ Download Resume
         </a>
       </div>
 
