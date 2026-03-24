@@ -5,6 +5,7 @@ import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
   project: Project;
+  onOpenDemo?: () => void;
 }
 
 const GitHubIcon: React.FC = () => (
@@ -21,7 +22,7 @@ const ExternalLinkIcon: React.FC = () => (
   </svg>
 );
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenDemo }) => {
   const { title, description, techStack, links, highlights } = project;
 
   return (
@@ -31,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className={styles.body}>
         <div className={styles.header}>
           <h3 className={styles.title}>{title}</h3>
-          <div className={styles.links}>
+          <div className={styles.iconLinks}>
             {links.github && (
               <a
                 href={links.github}
@@ -49,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.iconLink}
-                aria-label="Live demo"
+                aria-label="External live demo"
               >
                 <ExternalLinkIcon />
               </a>
@@ -67,10 +68,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </ul>
         )}
 
-        <div className={styles.tags}>
-          {techStack.map((tech) => (
-            <SkillBadge key={tech} name={tech} />
-          ))}
+        <div className={styles.footer}>
+          <div className={styles.tags}>
+            {techStack.map((tech) => (
+              <SkillBadge key={tech} name={tech} />
+            ))}
+          </div>
+
+          {onOpenDemo && (
+            <button className={styles.openDemoBtn} onClick={onOpenDemo}>
+              ▶ Open Demo
+            </button>
+          )}
         </div>
       </div>
     </article>

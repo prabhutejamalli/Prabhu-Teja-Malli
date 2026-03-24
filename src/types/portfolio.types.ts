@@ -48,6 +48,7 @@ export interface Project {
   techStack: string[];
   type: ProjectType;
   links: ProjectLink;
+  demoId?: string;     // if set, an "Open Demo" button renders on the card
   featured: boolean;
   highlights: string[];
 }

@@ -212,6 +212,40 @@ export const projects: Project[] = [
 
   // ── Demo Projects ──────────────────────────────────────────────────────── //
   {
+    id: 'demo-ecommerce',
+    title: 'E-Commerce Store',
+    description:
+      'A fully functional shopping app with product search, category filters, cart management, quantity controls, and order checkout — all built with React hooks and useReducer.',
+    techStack: ['React', 'TypeScript', 'useReducer', 'CSS Modules'],
+    type: 'demo',
+    demoId: 'ecommerce',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Real-time product search & category filters',
+      'Cart with add / remove / quantity controls',
+      'Animated cart drawer with order total',
+      'useReducer for scalable cart state management',
+    ],
+  },
+  {
+    id: 'demo-taskmanager',
+    title: 'Task Manager',
+    description:
+      'A productivity app to create, prioritise, and track tasks. Supports High / Medium / Low priorities, filter tabs, progress tracking, and clear completed — built entirely with React useState.',
+    techStack: ['React', 'TypeScript', 'useState', 'CSS Modules'],
+    type: 'demo',
+    demoId: 'taskmanager',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Add tasks with priority levels (High / Medium / Low)',
+      'Filter: All / Active / Completed tabs',
+      'Visual progress bar with completion percentage',
+      'Clear completed tasks in one click',
+    ],
+  },
+  {
     id: 'demo-canvas',
     title: 'Canvas Editor',
     description:
