@@ -1,0 +1,28 @@
+.switcher {
+  display: inline-flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 4px;
+  gap: 2px;
+}
+
+.tab {
+  padding: 8px 24px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-3);
+  transition: background var(--transition), color var(--transition);
+  letter-spacing: 0.01em;
+}
+
+.tab:hover {
+  color: var(--text-2);
+}
+
+.tab.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #fff;
+  box-shadow: 0 2px 12px var(--primary-glow);
+}
