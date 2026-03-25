@@ -212,6 +212,74 @@ export const projects: Project[] = [
 
   // ── Demo Projects ──────────────────────────────────────────────────────── //
   {
+    id: 'demo-analytics',
+    title: 'Analytics Dashboard',
+    description:
+      'A complete business analytics dashboard with real SVG charts (smooth bezier line chart & animated bar chart), live KPI cards with trend indicators, a transactions table, and top-products ranking — built entirely without any chart library.',
+    techStack: ['React', 'TypeScript', 'SVG Charts', 'CSS Modules'],
+    type: 'demo',
+    demoId: 'analytics',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Pure SVG line chart with smooth bezier curves & gradient fill',
+      'Animated bar chart — no third-party chart library used',
+      'KPI cards with live data toggle across Week / Month / Year',
+      'Transactions table with colour-coded status badges',
+    ],
+  },
+  {
+    id: 'demo-kanban',
+    title: 'Kanban Project Board',
+    description:
+      'A Trello-inspired project management board with native HTML5 drag-and-drop (zero external libraries). Cards move fluidly between five columns, can be created inline, deleted on hover, and filtered instantly by search.',
+    techStack: ['React', 'TypeScript', 'HTML5 DnD API', 'CSS Modules'],
+    type: 'demo',
+    demoId: 'kanban',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Native HTML5 drag-and-drop — no library needed',
+      'Visual drop-zone glow highlight on drag-over',
+      'Inline card creation with priority per column',
+      'Progress bar tracks completion across all columns',
+    ],
+  },
+  {
+    id: 'demo-invoice',
+    title: 'Invoice Generator',
+    description:
+      'A professional invoice generator with a split-panel design — dark form on the left, live styled invoice preview on the right that updates as you type. Auto-calculates 18% GST and generates a print-ready PDF via the browser Print API.',
+    techStack: ['React', 'TypeScript', 'CSS Modules', 'Print API'],
+    type: 'demo',
+    demoId: 'invoice',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Live invoice preview updates on every keystroke',
+      'Dynamic line items — add / remove rows instantly',
+      'Auto-calculates subtotal, 18% GST, and total',
+      'Print-to-PDF via browser Print API with clean print CSS',
+    ],
+  },
+  {
+    id: 'demo-property',
+    title: 'Property Listing App',
+    description:
+      'A real estate discovery app for Hyderabad properties — featuring a Buy / Rent toggle, real-time multi-filter search (type, price, beds), gradient property cards, save-to-favourites, and a full property detail modal with an enquiry CTA.',
+    techStack: ['React', 'TypeScript', 'useMemo', 'CSS Modules'],
+    type: 'demo',
+    demoId: 'property',
+    links: { github: 'https://github.com/prabhutejamalli/Prabhu-Teja-Malli' },
+    featured: true,
+    highlights: [
+      'Buy / Rent toggle with context-aware price filters',
+      'Multi-filter: property type + max price + min bedrooms',
+      'Heart toggle saves properties with instant UI feedback',
+      'Animated detail modal with enquiry confirmation toast',
+    ],
+  },
+  {
     id: 'demo-ecommerce',
     title: 'E-Commerce Store',
     description:

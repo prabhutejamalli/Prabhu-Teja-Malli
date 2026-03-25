@@ -1,12 +1,20 @@
 import React, { useEffect } from 'react';
-import ECommerceDemo from '../../../demos/ECommerce/ECommerceDemo';
-import TaskManagerDemo from '../../../demos/TaskManager/TaskManagerDemo';
+import ECommerceDemo      from '../../../demos/ECommerce/ECommerceDemo';
+import TaskManagerDemo    from '../../../demos/TaskManager/TaskManagerDemo';
+import AnalyticsDashboard from '../../../demos/Analytics/AnalyticsDashboard';
+import KanbanBoard        from '../../../demos/Kanban/KanbanBoard';
+import InvoiceGenerator   from '../../../demos/Invoice/InvoiceGenerator';
+import PropertyListing    from '../../../demos/PropertyListing/PropertyListing';
 import styles from './DemoViewer.module.css';
 
 // Registry — add new demos here
 const DEMO_REGISTRY: Record<string, React.ComponentType> = {
   ecommerce:   ECommerceDemo,
   taskmanager: TaskManagerDemo,
+  analytics:   AnalyticsDashboard,
+  kanban:      KanbanBoard,
+  invoice:     InvoiceGenerator,
+  property:    PropertyListing,
 };
 
 interface DemoViewerProps {
